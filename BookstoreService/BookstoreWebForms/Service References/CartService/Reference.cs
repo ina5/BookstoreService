@@ -15,349 +15,6 @@ namespace BookstoreWebForms.CartService {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="Book", Namespace="http://schemas.datacontract.org/2004/07/BookstoreService.Entities")]
-    [System.SerializableAttribute()]
-    public partial class Book : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
-        
-        [System.NonSerializedAttribute()]
-        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private int BookIDField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private BookstoreWebForms.CartService.Category CategoryField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private int CategoryIDField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private byte[] CoverField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string DescriptionField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string ISBNField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private decimal PriceField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string TitleField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private int YearField;
-        
-        [global::System.ComponentModel.BrowsableAttribute(false)]
-        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
-            get {
-                return this.extensionDataField;
-            }
-            set {
-                this.extensionDataField = value;
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public int BookID {
-            get {
-                return this.BookIDField;
-            }
-            set {
-                if ((this.BookIDField.Equals(value) != true)) {
-                    this.BookIDField = value;
-                    this.RaisePropertyChanged("BookID");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public BookstoreWebForms.CartService.Category Category {
-            get {
-                return this.CategoryField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.CategoryField, value) != true)) {
-                    this.CategoryField = value;
-                    this.RaisePropertyChanged("Category");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public int CategoryID {
-            get {
-                return this.CategoryIDField;
-            }
-            set {
-                if ((this.CategoryIDField.Equals(value) != true)) {
-                    this.CategoryIDField = value;
-                    this.RaisePropertyChanged("CategoryID");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public byte[] Cover {
-            get {
-                return this.CoverField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.CoverField, value) != true)) {
-                    this.CoverField = value;
-                    this.RaisePropertyChanged("Cover");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string Description {
-            get {
-                return this.DescriptionField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.DescriptionField, value) != true)) {
-                    this.DescriptionField = value;
-                    this.RaisePropertyChanged("Description");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string ISBN {
-            get {
-                return this.ISBNField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.ISBNField, value) != true)) {
-                    this.ISBNField = value;
-                    this.RaisePropertyChanged("ISBN");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public decimal Price {
-            get {
-                return this.PriceField;
-            }
-            set {
-                if ((this.PriceField.Equals(value) != true)) {
-                    this.PriceField = value;
-                    this.RaisePropertyChanged("Price");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string Title {
-            get {
-                return this.TitleField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.TitleField, value) != true)) {
-                    this.TitleField = value;
-                    this.RaisePropertyChanged("Title");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public int Year {
-            get {
-                return this.YearField;
-            }
-            set {
-                if ((this.YearField.Equals(value) != true)) {
-                    this.YearField = value;
-                    this.RaisePropertyChanged("Year");
-                }
-            }
-        }
-        
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        
-        protected void RaisePropertyChanged(string propertyName) {
-            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if ((propertyChanged != null)) {
-                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="Category", Namespace="http://schemas.datacontract.org/2004/07/BookstoreService.Entities")]
-    [System.SerializableAttribute()]
-    public partial class Category : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
-        
-        [System.NonSerializedAttribute()]
-        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private BookstoreWebForms.CartService.Book[] BooksField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private int CategoryIDField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string NameField;
-        
-        [global::System.ComponentModel.BrowsableAttribute(false)]
-        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
-            get {
-                return this.extensionDataField;
-            }
-            set {
-                this.extensionDataField = value;
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public BookstoreWebForms.CartService.Book[] Books {
-            get {
-                return this.BooksField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.BooksField, value) != true)) {
-                    this.BooksField = value;
-                    this.RaisePropertyChanged("Books");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public int CategoryID {
-            get {
-                return this.CategoryIDField;
-            }
-            set {
-                if ((this.CategoryIDField.Equals(value) != true)) {
-                    this.CategoryIDField = value;
-                    this.RaisePropertyChanged("CategoryID");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string Name {
-            get {
-                return this.NameField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.NameField, value) != true)) {
-                    this.NameField = value;
-                    this.RaisePropertyChanged("Name");
-                }
-            }
-        }
-        
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        
-        protected void RaisePropertyChanged(string propertyName) {
-            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if ((propertyChanged != null)) {
-                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="ExternalBook", Namespace="http://schemas.datacontract.org/2004/07/BookstoreService.Entities")]
-    [System.SerializableAttribute()]
-    public partial class ExternalBook : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
-        
-        [System.NonSerializedAttribute()]
-        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string ISBNField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string LinkField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string PublisherField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string TitleField;
-        
-        [global::System.ComponentModel.BrowsableAttribute(false)]
-        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
-            get {
-                return this.extensionDataField;
-            }
-            set {
-                this.extensionDataField = value;
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string ISBN {
-            get {
-                return this.ISBNField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.ISBNField, value) != true)) {
-                    this.ISBNField = value;
-                    this.RaisePropertyChanged("ISBN");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string Link {
-            get {
-                return this.LinkField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.LinkField, value) != true)) {
-                    this.LinkField = value;
-                    this.RaisePropertyChanged("Link");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string Publisher {
-            get {
-                return this.PublisherField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.PublisherField, value) != true)) {
-                    this.PublisherField = value;
-                    this.RaisePropertyChanged("Publisher");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string Title {
-            get {
-                return this.TitleField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.TitleField, value) != true)) {
-                    this.TitleField = value;
-                    this.RaisePropertyChanged("Title");
-                }
-            }
-        }
-        
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        
-        protected void RaisePropertyChanged(string propertyName) {
-            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if ((propertyChanged != null)) {
-                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="Cart", Namespace="http://schemas.datacontract.org/2004/07/BookstoreService.Entities")]
     [System.SerializableAttribute()]
     public partial class Cart : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
@@ -776,176 +433,253 @@ namespace BookstoreWebForms.CartService {
         }
     }
     
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ServiceModel.ServiceContractAttribute(Namespace="http://unwe.bg", ConfigurationName="CartService.IBooksService")]
-    public interface IBooksService {
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="Book", Namespace="http://schemas.datacontract.org/2004/07/BookstoreService.Entities")]
+    [System.SerializableAttribute()]
+    public partial class Book : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://unwe.bg/IBooksService/GetAllBooks", ReplyAction="http://unwe.bg/IBooksService/GetAllBooksResponse")]
-        BookstoreWebForms.CartService.Book[] GetAllBooks();
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://unwe.bg/IBooksService/GetAllBooks", ReplyAction="http://unwe.bg/IBooksService/GetAllBooksResponse")]
-        System.Threading.Tasks.Task<BookstoreWebForms.CartService.Book[]> GetAllBooksAsync();
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int BookIDField;
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://unwe.bg/IBooksService/GetAllCategories", ReplyAction="http://unwe.bg/IBooksService/GetAllCategoriesResponse")]
-        BookstoreWebForms.CartService.Category[] GetAllCategories();
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private BookstoreWebForms.CartService.Category CategoryField;
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://unwe.bg/IBooksService/GetAllCategories", ReplyAction="http://unwe.bg/IBooksService/GetAllCategoriesResponse")]
-        System.Threading.Tasks.Task<BookstoreWebForms.CartService.Category[]> GetAllCategoriesAsync();
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int CategoryIDField;
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://unwe.bg/IBooksService/GetBooksByCategoryId", ReplyAction="http://unwe.bg/IBooksService/GetBooksByCategoryIdResponse")]
-        BookstoreWebForms.CartService.Book[] GetBooksByCategoryId(int categoryId);
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private byte[] CoverField;
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://unwe.bg/IBooksService/GetBooksByCategoryId", ReplyAction="http://unwe.bg/IBooksService/GetBooksByCategoryIdResponse")]
-        System.Threading.Tasks.Task<BookstoreWebForms.CartService.Book[]> GetBooksByCategoryIdAsync(int categoryId);
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string DescriptionField;
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://unwe.bg/IBooksService/GetBooksByCategory", ReplyAction="http://unwe.bg/IBooksService/GetBooksByCategoryResponse")]
-        BookstoreWebForms.CartService.Book[] GetBooksByCategory(BookstoreWebForms.CartService.Category category);
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string ISBNField;
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://unwe.bg/IBooksService/GetBooksByCategory", ReplyAction="http://unwe.bg/IBooksService/GetBooksByCategoryResponse")]
-        System.Threading.Tasks.Task<BookstoreWebForms.CartService.Book[]> GetBooksByCategoryAsync(BookstoreWebForms.CartService.Category category);
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private decimal PriceField;
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://unwe.bg/IBooksService/GetBook", ReplyAction="http://unwe.bg/IBooksService/GetBookResponse")]
-        BookstoreWebForms.CartService.Book GetBook(int id);
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string TitleField;
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://unwe.bg/IBooksService/GetBook", ReplyAction="http://unwe.bg/IBooksService/GetBookResponse")]
-        System.Threading.Tasks.Task<BookstoreWebForms.CartService.Book> GetBookAsync(int id);
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int YearField;
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://unwe.bg/IBooksService/GetBookByISBN", ReplyAction="http://unwe.bg/IBooksService/GetBookByISBNResponse")]
-        BookstoreWebForms.CartService.Book GetBookByISBN(string isbn);
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://unwe.bg/IBooksService/GetBookByISBN", ReplyAction="http://unwe.bg/IBooksService/GetBookByISBNResponse")]
-        System.Threading.Tasks.Task<BookstoreWebForms.CartService.Book> GetBookByISBNAsync(string isbn);
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int BookID {
+            get {
+                return this.BookIDField;
+            }
+            set {
+                if ((this.BookIDField.Equals(value) != true)) {
+                    this.BookIDField = value;
+                    this.RaisePropertyChanged("BookID");
+                }
+            }
+        }
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://unwe.bg/IBooksService/GetSimilarBooks", ReplyAction="http://unwe.bg/IBooksService/GetSimilarBooksResponse")]
-        BookstoreWebForms.CartService.ExternalBook[] GetSimilarBooks(int id);
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public BookstoreWebForms.CartService.Category Category {
+            get {
+                return this.CategoryField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.CategoryField, value) != true)) {
+                    this.CategoryField = value;
+                    this.RaisePropertyChanged("Category");
+                }
+            }
+        }
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://unwe.bg/IBooksService/GetSimilarBooks", ReplyAction="http://unwe.bg/IBooksService/GetSimilarBooksResponse")]
-        System.Threading.Tasks.Task<BookstoreWebForms.CartService.ExternalBook[]> GetSimilarBooksAsync(int id);
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int CategoryID {
+            get {
+                return this.CategoryIDField;
+            }
+            set {
+                if ((this.CategoryIDField.Equals(value) != true)) {
+                    this.CategoryIDField = value;
+                    this.RaisePropertyChanged("CategoryID");
+                }
+            }
+        }
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://unwe.bg/IBooksService/CreateBook", ReplyAction="http://unwe.bg/IBooksService/CreateBookResponse")]
-        BookstoreWebForms.CartService.Book CreateBook(BookstoreWebForms.CartService.Book book);
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public byte[] Cover {
+            get {
+                return this.CoverField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.CoverField, value) != true)) {
+                    this.CoverField = value;
+                    this.RaisePropertyChanged("Cover");
+                }
+            }
+        }
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://unwe.bg/IBooksService/CreateBook", ReplyAction="http://unwe.bg/IBooksService/CreateBookResponse")]
-        System.Threading.Tasks.Task<BookstoreWebForms.CartService.Book> CreateBookAsync(BookstoreWebForms.CartService.Book book);
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Description {
+            get {
+                return this.DescriptionField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.DescriptionField, value) != true)) {
+                    this.DescriptionField = value;
+                    this.RaisePropertyChanged("Description");
+                }
+            }
+        }
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://unwe.bg/IBooksService/UpdateBook", ReplyAction="http://unwe.bg/IBooksService/UpdateBookResponse")]
-        BookstoreWebForms.CartService.Book UpdateBook(BookstoreWebForms.CartService.Book book);
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string ISBN {
+            get {
+                return this.ISBNField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.ISBNField, value) != true)) {
+                    this.ISBNField = value;
+                    this.RaisePropertyChanged("ISBN");
+                }
+            }
+        }
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://unwe.bg/IBooksService/UpdateBook", ReplyAction="http://unwe.bg/IBooksService/UpdateBookResponse")]
-        System.Threading.Tasks.Task<BookstoreWebForms.CartService.Book> UpdateBookAsync(BookstoreWebForms.CartService.Book book);
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public decimal Price {
+            get {
+                return this.PriceField;
+            }
+            set {
+                if ((this.PriceField.Equals(value) != true)) {
+                    this.PriceField = value;
+                    this.RaisePropertyChanged("Price");
+                }
+            }
+        }
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://unwe.bg/IBooksService/RemoveBook", ReplyAction="http://unwe.bg/IBooksService/RemoveBookResponse")]
-        void RemoveBook(int bookId);
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Title {
+            get {
+                return this.TitleField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.TitleField, value) != true)) {
+                    this.TitleField = value;
+                    this.RaisePropertyChanged("Title");
+                }
+            }
+        }
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://unwe.bg/IBooksService/RemoveBook", ReplyAction="http://unwe.bg/IBooksService/RemoveBookResponse")]
-        System.Threading.Tasks.Task RemoveBookAsync(int bookId);
-    }
-    
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public interface IBooksServiceChannel : BookstoreWebForms.CartService.IBooksService, System.ServiceModel.IClientChannel {
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int Year {
+            get {
+                return this.YearField;
+            }
+            set {
+                if ((this.YearField.Equals(value) != true)) {
+                    this.YearField = value;
+                    this.RaisePropertyChanged("Year");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public partial class BooksServiceClient : System.ServiceModel.ClientBase<BookstoreWebForms.CartService.IBooksService>, BookstoreWebForms.CartService.IBooksService {
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="Category", Namespace="http://schemas.datacontract.org/2004/07/BookstoreService.Entities")]
+    [System.SerializableAttribute()]
+    public partial class Category : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
         
-        public BooksServiceClient() {
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private BookstoreWebForms.CartService.Book[] BooksField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int CategoryIDField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string NameField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
         }
         
-        public BooksServiceClient(string endpointConfigurationName) : 
-                base(endpointConfigurationName) {
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public BookstoreWebForms.CartService.Book[] Books {
+            get {
+                return this.BooksField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.BooksField, value) != true)) {
+                    this.BooksField = value;
+                    this.RaisePropertyChanged("Books");
+                }
+            }
         }
         
-        public BooksServiceClient(string endpointConfigurationName, string remoteAddress) : 
-                base(endpointConfigurationName, remoteAddress) {
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int CategoryID {
+            get {
+                return this.CategoryIDField;
+            }
+            set {
+                if ((this.CategoryIDField.Equals(value) != true)) {
+                    this.CategoryIDField = value;
+                    this.RaisePropertyChanged("CategoryID");
+                }
+            }
         }
         
-        public BooksServiceClient(string endpointConfigurationName, System.ServiceModel.EndpointAddress remoteAddress) : 
-                base(endpointConfigurationName, remoteAddress) {
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Name {
+            get {
+                return this.NameField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.NameField, value) != true)) {
+                    this.NameField = value;
+                    this.RaisePropertyChanged("Name");
+                }
+            }
         }
         
-        public BooksServiceClient(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) : 
-                base(binding, remoteAddress) {
-        }
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
         
-        public BookstoreWebForms.CartService.Book[] GetAllBooks() {
-            return base.Channel.GetAllBooks();
-        }
-        
-        public System.Threading.Tasks.Task<BookstoreWebForms.CartService.Book[]> GetAllBooksAsync() {
-            return base.Channel.GetAllBooksAsync();
-        }
-        
-        public BookstoreWebForms.CartService.Category[] GetAllCategories() {
-            return base.Channel.GetAllCategories();
-        }
-        
-        public System.Threading.Tasks.Task<BookstoreWebForms.CartService.Category[]> GetAllCategoriesAsync() {
-            return base.Channel.GetAllCategoriesAsync();
-        }
-        
-        public BookstoreWebForms.CartService.Book[] GetBooksByCategoryId(int categoryId) {
-            return base.Channel.GetBooksByCategoryId(categoryId);
-        }
-        
-        public System.Threading.Tasks.Task<BookstoreWebForms.CartService.Book[]> GetBooksByCategoryIdAsync(int categoryId) {
-            return base.Channel.GetBooksByCategoryIdAsync(categoryId);
-        }
-        
-        public BookstoreWebForms.CartService.Book[] GetBooksByCategory(BookstoreWebForms.CartService.Category category) {
-            return base.Channel.GetBooksByCategory(category);
-        }
-        
-        public System.Threading.Tasks.Task<BookstoreWebForms.CartService.Book[]> GetBooksByCategoryAsync(BookstoreWebForms.CartService.Category category) {
-            return base.Channel.GetBooksByCategoryAsync(category);
-        }
-        
-        public BookstoreWebForms.CartService.Book GetBook(int id) {
-            return base.Channel.GetBook(id);
-        }
-        
-        public System.Threading.Tasks.Task<BookstoreWebForms.CartService.Book> GetBookAsync(int id) {
-            return base.Channel.GetBookAsync(id);
-        }
-        
-        public BookstoreWebForms.CartService.Book GetBookByISBN(string isbn) {
-            return base.Channel.GetBookByISBN(isbn);
-        }
-        
-        public System.Threading.Tasks.Task<BookstoreWebForms.CartService.Book> GetBookByISBNAsync(string isbn) {
-            return base.Channel.GetBookByISBNAsync(isbn);
-        }
-        
-        public BookstoreWebForms.CartService.ExternalBook[] GetSimilarBooks(int id) {
-            return base.Channel.GetSimilarBooks(id);
-        }
-        
-        public System.Threading.Tasks.Task<BookstoreWebForms.CartService.ExternalBook[]> GetSimilarBooksAsync(int id) {
-            return base.Channel.GetSimilarBooksAsync(id);
-        }
-        
-        public BookstoreWebForms.CartService.Book CreateBook(BookstoreWebForms.CartService.Book book) {
-            return base.Channel.CreateBook(book);
-        }
-        
-        public System.Threading.Tasks.Task<BookstoreWebForms.CartService.Book> CreateBookAsync(BookstoreWebForms.CartService.Book book) {
-            return base.Channel.CreateBookAsync(book);
-        }
-        
-        public BookstoreWebForms.CartService.Book UpdateBook(BookstoreWebForms.CartService.Book book) {
-            return base.Channel.UpdateBook(book);
-        }
-        
-        public System.Threading.Tasks.Task<BookstoreWebForms.CartService.Book> UpdateBookAsync(BookstoreWebForms.CartService.Book book) {
-            return base.Channel.UpdateBookAsync(book);
-        }
-        
-        public void RemoveBook(int bookId) {
-            base.Channel.RemoveBook(bookId);
-        }
-        
-        public System.Threading.Tasks.Task RemoveBookAsync(int bookId) {
-            return base.Channel.RemoveBookAsync(bookId);
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
         }
     }
     
@@ -996,40 +730,16 @@ namespace BookstoreWebForms.CartService {
         System.Threading.Tasks.Task<bool> PurchaseAsync(int cartId);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://unwe.bg/ICartService/GetDeliveryOptions", ReplyAction="http://unwe.bg/ICartService/GetDeliveryOptionsResponse")]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(BookstoreWebForms.CartService.Book[]))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(BookstoreWebForms.CartService.Book))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(BookstoreWebForms.CartService.Category))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(BookstoreWebForms.CartService.Category[]))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(BookstoreWebForms.CartService.ExternalBook[]))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(BookstoreWebForms.CartService.ExternalBook))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(BookstoreWebForms.CartService.Cart))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(BookstoreWebForms.CartService.CartBook[]))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(BookstoreWebForms.CartService.CartBook))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(BookstoreWebForms.CartService.DeliveryOption))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(BookstoreWebForms.CartService.PaymentMethod))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(object[]))]
-        object[] GetDeliveryOptions();
+        BookstoreWebForms.CartService.DeliveryOption[] GetDeliveryOptions();
         
         [System.ServiceModel.OperationContractAttribute(Action="http://unwe.bg/ICartService/GetDeliveryOptions", ReplyAction="http://unwe.bg/ICartService/GetDeliveryOptionsResponse")]
-        System.Threading.Tasks.Task<object[]> GetDeliveryOptionsAsync();
+        System.Threading.Tasks.Task<BookstoreWebForms.CartService.DeliveryOption[]> GetDeliveryOptionsAsync();
         
         [System.ServiceModel.OperationContractAttribute(Action="http://unwe.bg/ICartService/GetPaymentMethods", ReplyAction="http://unwe.bg/ICartService/GetPaymentMethodsResponse")]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(BookstoreWebForms.CartService.Book[]))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(BookstoreWebForms.CartService.Book))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(BookstoreWebForms.CartService.Category))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(BookstoreWebForms.CartService.Category[]))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(BookstoreWebForms.CartService.ExternalBook[]))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(BookstoreWebForms.CartService.ExternalBook))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(BookstoreWebForms.CartService.Cart))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(BookstoreWebForms.CartService.CartBook[]))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(BookstoreWebForms.CartService.CartBook))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(BookstoreWebForms.CartService.DeliveryOption))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(BookstoreWebForms.CartService.PaymentMethod))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(object[]))]
-        object[] GetPaymentMethods();
+        BookstoreWebForms.CartService.PaymentMethod[] GetPaymentMethods();
         
         [System.ServiceModel.OperationContractAttribute(Action="http://unwe.bg/ICartService/GetPaymentMethods", ReplyAction="http://unwe.bg/ICartService/GetPaymentMethodsResponse")]
-        System.Threading.Tasks.Task<object[]> GetPaymentMethodsAsync();
+        System.Threading.Tasks.Task<BookstoreWebForms.CartService.PaymentMethod[]> GetPaymentMethodsAsync();
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -1115,19 +825,19 @@ namespace BookstoreWebForms.CartService {
             return base.Channel.PurchaseAsync(cartId);
         }
         
-        public object[] GetDeliveryOptions() {
+        public BookstoreWebForms.CartService.DeliveryOption[] GetDeliveryOptions() {
             return base.Channel.GetDeliveryOptions();
         }
         
-        public System.Threading.Tasks.Task<object[]> GetDeliveryOptionsAsync() {
+        public System.Threading.Tasks.Task<BookstoreWebForms.CartService.DeliveryOption[]> GetDeliveryOptionsAsync() {
             return base.Channel.GetDeliveryOptionsAsync();
         }
         
-        public object[] GetPaymentMethods() {
+        public BookstoreWebForms.CartService.PaymentMethod[] GetPaymentMethods() {
             return base.Channel.GetPaymentMethods();
         }
         
-        public System.Threading.Tasks.Task<object[]> GetPaymentMethodsAsync() {
+        public System.Threading.Tasks.Task<BookstoreWebForms.CartService.PaymentMethod[]> GetPaymentMethodsAsync() {
             return base.Channel.GetPaymentMethodsAsync();
         }
     }

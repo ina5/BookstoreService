@@ -56,16 +56,6 @@ namespace BookstoreService.Services
 
         }
 
-        public IEnumerable GetDeliveryOptions()
-        {
-            return db.Query<DeliveryOption>("SELECT * FROM DeliveryOptions ORDER BY 1");
-        }
-
-        public IEnumerable GetPaymentMethods()
-        {
-            return db.Query<PaymentMethod>("SELECT * FROM PaymentMethods ORDER BY 1");
-        }
-
         public bool Purchase(int cartId)
         {
             throw new NotImplementedException();
@@ -90,15 +80,15 @@ namespace BookstoreService.Services
             return db.Execute("UPDATE Carts SET PaymentMethodID=@pmid WHERE CartID=@cartid", new { cartid = cartId, pmid = method.PaymentMethodID }) > 0;
         }
 
-        //public IEnumerable<DeliveryOption> GetDeliveryOptions()
-        //{
-        //    return db.Query<DeliveryOption>("SELECT * FROM DeliveryOptions ORDER BY 1");
-        //}
+        public IEnumerable<DeliveryOption> GetDeliveryOptions()
+        {
+            return db.Query<DeliveryOption>("SELECT * FROM DeliveryOptions ORDER BY 1");
+        }
 
-        //public IEnumerable<PaymentMethod> GetPaymentMethods()
-        //{
-        //    return db.Query<PaymentMethod>("SELECT * FROM PaymentMethods ORDER BY 1");
-        //}
+        public IEnumerable<PaymentMethod> GetPaymentMethods()
+        {
+            return db.Query<PaymentMethod>("SELECT * FROM PaymentMethods ORDER BY 1");
+        }
 
 
     }

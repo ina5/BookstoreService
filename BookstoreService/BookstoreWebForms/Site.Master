@@ -1,4 +1,5 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="BookstoreWebForms.SiteMaster" %>
+
 <!DOCTYPE html>
 <html lang="en">
 <head runat="server">
@@ -8,7 +9,7 @@
     <asp:PlaceHolder runat="server">
         <%: Scripts.Render("~/bundles/modernizr") %>
     </asp:PlaceHolder>
-    <webopt:bundlereference runat="server" path="~/Content/css" />
+    <webopt:BundleReference runat="server" Path="~/Content/css" />
     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
 </head>
 <body>
@@ -47,20 +48,21 @@
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
                         <li><a runat="server" href="~/">Начало</a></li>
-                        <li><a runat="server" href="~/About">За нас</a></li>
-                        <li><a runat="server" href="~/Contact">Контакти</a></li>
+                        <li><a runat="server" href="http://www.unwe.bg/">За нас</a></li>
+                        <li><a runat="server" href="http://www.unwe.bg/bg/home/contacts">Контакти</a></li>
                         <li><a runat="server" href="~/Books">Книги</a></li>
                     </ul>
                     <asp:LoginView runat="server" ViewStateMode="Disabled">
                         <AnonymousTemplate>
                             <ul class="nav navbar-nav navbar-right">
-                                <li><a runat="server" href="~/Cart" class="btn-cart"><i class="glyphicon glyphicon-cart"></i> Моята количка</a></li>
                                 <li><a runat="server" href="~/Account/Register">Регистрация</a></li>
                                 <li><a runat="server" href="~/Account/Login">Вход</a></li>
                             </ul>
                         </AnonymousTemplate>
                         <LoggedInTemplate>
                             <ul class="nav navbar-nav navbar-right">
+                                <li><a runat="server" href="~/Cart" class="btn-cart"><i class="glyphicon glyphicon-cart"></i>Моята количка</a></li>
+
                                 <li><a runat="server" href="~/Account/Manage" title="Manage your account">Здравейте, <%: Context.User.Identity.GetUserName()  %> !</a></li>
                                 <li>
                                     <asp:LoginStatus runat="server" LogoutAction="Redirect" LogoutText="Изход" LogoutPageUrl="~/" OnLoggingOut="Unnamed_LoggingOut" />

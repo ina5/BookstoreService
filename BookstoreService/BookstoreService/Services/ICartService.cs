@@ -28,8 +28,8 @@ namespace BookstoreService.Services
         bool Purchase(int cartId);
 
         [OperationContract]
-        IEnumerable GetDeliveryOptions();
+        IEnumerable<DeliveryOption> GetDeliveryOptions();
         [OperationContract]
-        IEnumerable GetPaymentMethods();
+        IEnumerable<PaymentMethod> GetPaymentMethods();
     }
 }

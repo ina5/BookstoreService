@@ -23,11 +23,10 @@
   </MetadataSources>
   <Metadata>
     <MetadataFile FileName="item.xsd" MetadataType="Schema" ID="a8b2f14e-a60b-4983-a56d-b2e45e08bee1" SourceId="1" SourceUrl="http://localhost:8124/?xsd=xsd2" />
-    <MetadataFile FileName="item1.xsd" MetadataType="Schema" ID="70908427-b692-43c1-9699-5ac8fac58701" SourceId="1" SourceUrl="http://localhost:8124/?xsd=xsd1" />
     <MetadataFile FileName="item2.xsd" MetadataType="Schema" ID="4e6393b8-8af8-43e7-a3f6-66db9ae5a420" SourceId="1" SourceUrl="http://localhost:8124/?xsd=xsd0" />
     <MetadataFile FileName="item.wsdl" MetadataType="Wsdl" ID="5d09821a-a751-4e00-b377-d5cafdde369b" SourceId="1" SourceUrl="http://localhost:8124/?wsdl=wsdl0" />
     <MetadataFile FileName="CartService.wsdl" MetadataType="Wsdl" ID="ffd85294-9321-471d-acb6-d7e0f2577bda" SourceId="1" SourceUrl="http://localhost:8124/?wsdl" />
-    <MetadataFile FileName="item3.xsd" MetadataType="Schema" ID="e0b620df-abba-4ba3-b3e0-80b0c1a54d0f" SourceId="1" SourceUrl="http://localhost:8124/?xsd=xsd3" />
+    <MetadataFile FileName="item1.xsd" MetadataType="Schema" ID="70908427-b692-43c1-9699-5ac8fac58701" SourceId="1" SourceUrl="http://localhost:8124/?xsd=xsd1" />
     <MetadataFile FileName="item.disco" MetadataType="Disco" ID="8126dba3-1272-4f30-8e92-331fe411054f" SourceId="1" SourceUrl="http://localhost:8124/?disco" />
   </Metadata>
   <Extensions>
